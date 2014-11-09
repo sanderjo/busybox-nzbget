@@ -1,6 +1,12 @@
 FROM progrium/busybox
 MAINTAINER sanderjo <sanderjonkers+docker@gmail.com>
 
+# create image (don't forget the . at the end of the line):
+# sudo docker build --no-cache -t sanderjo/busybox-nzbget .
+
+# run image in a container
+# sudo docker run -p 6789:6789 -it sanderjo/busybox-nzbget
+
 RUN	opkg-install curl
 
 RUN 	cd / &&\
@@ -32,6 +38,14 @@ RUN	cd /nzbget &&\
         chmod +x /usr/bin/unrar
 
 EXPOSE 6789
+
+# Now, on the docker container prompt (so: inside the container), type something like:
+# /nzbget/nzbget -D -c /nzbget/nzbget.conf --option WebDir=/nzbget/webui \
+# -o server1.name=newsreader3.eweka.nl -o server1.host=newsreader3.eweka.nl \
+# -o server1.username=blabla -o server1.password=blabla
+
+# Then, access it using your webbrowser via http://127.0.0.1:6789/nzbget:tegbzn6789/
+
 
 
 
