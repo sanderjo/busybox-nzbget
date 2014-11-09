@@ -1,7 +1,7 @@
 busybox-nzbget
 ==============
 
-docker image for NZBget on busybox. Total size is about 15 MB.
+A x86_64 docker image for NZBget on busybox. Total size is about 15 MB.
 
 Create Image
 ------------
