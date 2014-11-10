@@ -27,10 +27,15 @@ Run Image
 sudo docker run -d -p 6789:6789 -v ~/nzbget-config:/config -v ~/nzbget-data:/data  sanderjo/busybox-nzbget
 ```
 
-Access NZBget
+Configure NZBget
 -------------
 Access NZBget via http://127.0.0.1:6789/nzbget:tegbzn6789/
 
-Go to Settings -> NEWS-SERVERS and fill out at least one newsserver. Click on "Save All Changes" and then on Restart NZBget.
+Go to Settings -> NEWS-SERVERS and fill out at least one newsserver. Click on "Save All Changes" and then on "Reload NZBget."
+
+Download NZBs
+-------------
+Via the NZBget webinterface and add a NZB. The result should appear in ~/nzbget/data/
+
 
 
