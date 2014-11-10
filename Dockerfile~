@@ -30,7 +30,8 @@ RUN 	cd /nzbget &&\
         tar xvf webui-of-nzbget.tar &&\
         cp nzbget.conf.ORG webui/nzbget.conf
 
-RUN	mkdir /root/downloads && mkdir /root/downloads/dst/ 		### still needed?
+RUN	mkdir /root/downloads && mkdir /root/downloads/dst/ 		
+### ... is the above still needed?
 
 RUN	cd /usr/lib/  &&\
         curl --silent -L -k  https://www.dropbox.com/s/c0xk6xr24z6fwe2/libs-for-nzbget.tar.gz?dl=0 -o libs-for-nzbget.tar.gz &&\
