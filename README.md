@@ -37,5 +37,31 @@ Download NZBs
 -------------
 Via the NZBget webinterface and add a NZB. The result should appear in ~/nzbget/data/
 
+Directories
+-----------
+Config directory, plus a bit of logging:
+```
+$ ls -al ~/nzbget-config/
+total 168
+drwxrwxr-x   2 sander sander  4096 nov 10 23:26 .
+drwxr-xr-x 166 sander sander 20480 nov 10 23:23 ..
+-rw-r--r--   1 root   root      60 nov 10 23:26 bootdate.txt
+-rw-r--r--   1 root   root   66458 nov 10 23:31 nzbget.conf
+-rw-r--r--   1 root   root   66192 nov 10 23:26 nzbget.conf.bak
+```
+Data directory:
+```
+$ ls -al ~/nzbget-data
+total 48
+drwxrwxr-x   7 sander sander  4096 nov 10 23:33 .
+drwxr-xr-x 166 sander sander 20480 nov 10 23:23 ..
+drwxr-xr-x   3 root   root    4096 nov 10 23:33 dst
+drwxr-xr-x   2 root   root    4096 nov 10 23:33 inter
+drwxr-xr-x   2 root   root    4096 nov 10 23:33 nzb
+drwxr-xr-x   2 root   root    4096 nov 10 23:33 queue
+drwxr-xr-x   2 root   root    4096 nov 10 23:33 tmp
+```
+
+
 
 
