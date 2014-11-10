@@ -3,6 +3,8 @@ busybox-nzbget
 
 A x86_64 docker image for NZBget on busybox. Total size is about 15 MB. And that is the goal of this docker image: provide a small image.
 
+This nzbget image is not capable of running python scripts.
+
 Preparation
 -----------
 ```
