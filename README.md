@@ -5,12 +5,6 @@ A x86_64 docker image for NZBget on busybox. Total size is about 15 MB. And that
 
 This nzbget image is not capable of running python scripts.
 
-Preparation
------------
-```
-mkdir ~/nzbget-data/
-mkdir ~/nzbget-config
-```
 
 Get Image Source
 ----------------
@@ -25,7 +19,12 @@ sudo docker build --no-cache -t sanderjo/busybox-nzbget .
 ```
 Note: do not forget the . at the end of the line above!
 
-
+Preparation
+-----------
+```
+mkdir ~/nzbget-data/
+mkdir ~/nzbget-config
+```
 
 Run Image
 ---------
