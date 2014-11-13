@@ -12,8 +12,8 @@ mkdir ~/nzbget-data/
 mkdir ~/nzbget-config
 ```
 
-Get Image
----------
+Get Image Source
+----------------
 ```
 git clone https://github.com/sanderjo/busybox-nzbget.git
 cd busybox-nzbget
