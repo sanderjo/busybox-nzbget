@@ -55,11 +55,6 @@ RUN chmod u+x  /start.sh
 CMD ["/start.sh"]
 
 
-# Now, on the docker container prompt (so: inside the container), type something like:
-# /nzbget/nzbget -D -c /nzbget/nzbget.conf --option WebDir=/nzbget/webui \
-# -o server1.name=newsreader3.eweka.nl -o server1.host=newsreader3.eweka.nl \
-# -o server1.username=blabla -o server1.password=blabla
-
 # Then, access it using your webbrowser via http://127.0.0.1:6789/nzbget:tegbzn6789/
 
 
